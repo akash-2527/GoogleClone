@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+            background-image: url(images/w9.jpg);
+            background-size: cover;
+        }
+
+        .main{
+            width:60vw;
+            /* background-color: transparent; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .gphoto{
+            width: 25vw;
+            margin-bottom: 30px;
+        }
+
+        .search-tab{
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            background-color: white;
+            width: 50vw;
+            border-radius: 25px;
+            padding: 7px;
+            gap: 7px;
+            
+        }
+
+        .inpt{
+            width: 40vw;
+            border: none;
+            outline: none;
+            padding: 5px;
+            margin-right: 10px;
+            font-size: 18px;
+            
+        }
+
+        i{
+            margin-left: 8px;
+            font-size: 18px;
+        }
+
+        .inpt::placeholder{
+            font-size: 18px;
+        }
+
+        .card{
+            width:100px;
+            height: 100px;
+            /* background-color: rgba(0, 0, 0, 0.277); */
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            margin: 10px;
+            border-radius: 10px;
+            
+        }
+        .card:hover{
+            background: rgba( 255, 255, 255, 0.217 );
+            
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            .dots{
+                opacity: 1;
+            }
+        }
+
+        .items{
+            width: 40%;
+            height: 40%;
+            /* background-color: black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+            border-radius: 50%;
+            border: none;
+            
+        }
+
+        .c-img{
+            width: 100%;
+            border: none;
+            border-radius: 50%;
+            margin-bottom: 7px;
+        }
+        .list-cards{
+            display: flex;
+            margin: 10px;
+            margin-top: 10px;
+            
+        }
+        .dots{
+            position: relative;
+            left: 33px;
+            color: white;
+            opacity: 0;
+            transition: 0.4s all ease;
+        }
+
+        .right
+        {
+            width:200px;
+            height: 50px;
+           color: white;
+            position: fixed;
+            top:10px;
+            right: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .grid{
+            
+            display: flex;
+        }
+        
+        .dotts{
+            width: 0;
+        }
+
+        .g1{
+            width:30px;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <img src="images/google.png" class="gphoto" alt="google">
+
+
+
+
+            <div class="search-tab">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            <form action="https://www.google.com/search">
+                <input type="text" class="inpt" name="q" placeholder="Search Google or type a URL">
+            </form>
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-camera"></i>
+            </div>
+
+            <div class="list-cards">
+                <div class="card">
+                    <div class="items">
+                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        <img src="images/insta.png" class="c-img">
+                        <p style="color: white; margin-top: 4px;">Instagram</p>
+                    </div>                
+                </div>
+
+                <div class="card">
+                    <div class="items">
+                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        <img src="images/youtube.webp" class="c-img">
+                        <p style="color: white; margin-top: 4px;">Youtube</p>
+                    </div>                
+                </div>
+                <div class="card">
+                    <div class="items">
+                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        <img src="images/l1.jpg" class="c-img">
+                        <p style="color: white; margin-top: 4px;">LinkedIn</p>
+                    </div>                
+                </div>
+                <div class="card">
+                    <div class="items">
+                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        <img src="images/chatgpt.jpg" class="c-img">
+                        <p style="color: white; margin-top: 4px;">ChatGPT</p>
+                    </div>                
+                </div>
+                <div class="card">
+                    <div class="items">
+                        <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                        <img src="images/X_logo.jpg" class="c-img">
+                        <p style="color: white; margin-top: 4px;">Twitter</p>
+                    </div>                
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <p>Gmail</p>
+            <p>Images</p>
+           <div class="grid">
+            <i class="fa-solid fa-ellipsis-vertical dotts"></i>
+            <i class="fa-solid fa-ellipsis-vertical dotts"></i>
+            <i class="fa-solid fa-ellipsis-vertical dotts"></i>
+           </div>
+           <img src="images/g2.gif" class="g1">
+
+        </div>
+
+    </div>
+</body>
+</html>
+
