@@ -31,7 +31,7 @@ Feel free to fork this repository and submit pull requests for improvements.
 This project is licensed under the **MIT License**.
 
 ---
-**Author:** Your Name
+**Author:** Prem
 
 If you like this project, give it a ⭐ on GitHub!
 
